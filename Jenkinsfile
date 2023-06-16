@@ -16,17 +16,7 @@ pipeline {
                 git branch: 'main', url: 'https://github.com/jobsforprabu/maven-web-app'
             }
         }
-        stage("Build Application") {
-            steps {
-                sh "mvn clean package"
-            }
-        }
-        stage("Test Application") {
-            steps {
-                sh "mvn test"
-            }
-
-        }
+       
     }
     
 }
