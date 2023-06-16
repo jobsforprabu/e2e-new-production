@@ -13,10 +13,9 @@ pipeline {
         }
         stage("checkout from scm") {
             steps {
-                git branch: 'main', url: 'https://github.com/jobsforprabu/maven-web-app'
+                git branch: 'main', url: 'https://github.com/jobsforprabu/e2e-new-production'
             }
         }
-       
     }
     
 }
